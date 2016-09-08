@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <meta charset=utf-8>
-  <title>KOKO</title>
-  <style>
-    body {
-      text-align: center;
-    }
-  </style>
-  <img src="koko_logo.gif" /><br />
-  <img src="knapp_rund.png" />
+<meta charset=utf-8>
+<title>KOKO</title>
+<style>
+  body, html, aligner {
+    height: 100%;
+  }
+  img {
+    max-width: 100%;
+  }
+  aligner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  center {
+    display: block;
+    height: auto;
+  }
+</style>
+<aligner>
+  <center>
+    <img src="koko_logo.gif" />
+    <br>
+    <img src="knapp_rund.png" />
+  </center>
+</aligner>
 </html>
