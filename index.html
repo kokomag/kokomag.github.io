@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html>
-<meta charset=utf-8>
-<title>KOKO</title>
-<style>
-  body, html, aligner {
-    height: 100%;
-  }
-  img {
-    max-width: 100%;
-  }
-  aligner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  center {
-    display: block;
-    height: auto;
-  }
-</style>
-<aligner>
-  <center>
-    <img src="koko_logo.gif" />
-    <br>
-    <a
-        href="mailto:red@koko.se?subject=Hej%21+S%C3%A4g+till+mig+n%C3%A4r+jag+kan+k%C3%B6pa+KOKO">
-      <img src="knapp_rund.png" />
-    </a>
-  </center>
-</aligner>
+<head>
+  <meta charset=utf-8>
+  <title>KOKO</title>
+  <link type="text/css" rel="stylesheet" href="./bootstrap.min.css">
+
+  <style>
+    .vertical-center {
+      min-height: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="vertical-center">
+    <div class="container">
+      <div class="row">
+        <div class="center-block">
+          <img class="img-responsive" src="koko_logo.gif" />
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="text-center">
+          <form class="form-inline validate" action="//koko.us14.list-manage.com/subscribe/post?u=a26723e977cf1830fc054504d&amp;id=a9df299ed7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate>
+            <div class="form-group">
+              <input class="form-control input-lg" type="email" placeholder="Din e-postadress" aria-required="true" name="EMAIL" required="required" pattern="/^[a-zA-Z0-9+-_]+(\.[_a-zA-Z0-9+]+)*@[a-zA-Z0-9+-_]+(\.[a-zA-Z0-9+-_]+)*(\.[a-zA-Z]+)$/">
+            </div>
+            <button type="submit" class="btn btn-lg btn-success">Maila mig när den går att köpa</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
